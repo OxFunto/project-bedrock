@@ -1,0 +1,3 @@
+{
+  "note": "Run terraform output -json > grading.json from the terraform directory after apply to populate this file"
+}

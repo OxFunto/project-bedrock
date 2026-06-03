@@ -1,0 +1,35 @@
+# Retail Store Sample App - Custom Values
+# Overrides default in-cluster databases with managed AWS services
+
+catalog:
+  db:
+    endpoint: POSTGRES_HOST_PLACEHOLDER
+    name: retaildb
+    user: postgres
+    passwordSecret: catalog-db-secret
+
+orders:
+  db:
+    endpoint: MYSQL_HOST_PLACEHOLDER
+    name: orders
+    user: dbadmin
+    passwordSecret: orders-db-secret
+
+carts:
+  dynamodb:
+    tableName: project-bedrock-carts
+    region: us-east-1
+  serviceAccount:
+    annotations:
+      eks.amazonaws.com/role-arn: CARTS_ROLE_ARN_PLACEHOLDER
+
+ui:
+  service:
+    type: ClusterIP
+    port: 80
+
+rabbitmq:
+  enabled: true
+
+redis:
+  enabled: true
