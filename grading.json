@@ -1,3 +1,37 @@
 {
-  "note": "Run terraform output -json > grading.json from the terraform directory after apply to populate this file"
+  "alb_controller_role_arn": {
+    "sensitive": false,
+    "type": "string",
+    "value": "arn:aws:iam::887930139017:role/project-bedrock-alb-controller-role"
+  },
+  "carts_dynamodb_role_arn": {
+    "sensitive": false,
+    "type": "string",
+    "value": "arn:aws:iam::887930139017:role/project-bedrock-carts-dynamodb-role"
+  },
+  "dev_access_key_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "AKIA45PGCWGEWFDYQPH5"
+  },
+  "dev_console_password": {
+    "sensitive": true,
+    "type": "string",
+    "value": "p4}xqV*uj98f#2SM6]]V"
+  },
+  "dev_secret_access_key": {
+    "sensitive": true,
+    "type": "string",
+    "value": "K1bpDvvFC6r8iQxCHeywk2MNh2Kd6NNLxvOewqv6"
+  },
+  "mysql_host": {
+    "sensitive": false,
+    "type": "string",
+    "value": "project-bedrock-mysql.c6744gw0eixf.us-east-1.rds.amazonaws.com"
+  },
+  "postgres_host": {
+    "sensitive": false,
+    "type": "string",
+    "value": "project-bedrock-postgres.c6744gw0eixf.us-east-1.rds.amazonaws.com"
+  }
 }
