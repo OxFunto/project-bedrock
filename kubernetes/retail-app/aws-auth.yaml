@@ -5,7 +5,7 @@ metadata:
   namespace: kube-system
 data:
   mapUsers: |
-    - userarn: arn:aws:iam::ACCOUNT_ID:user/bedrock-dev-view
+    - userarn: arn:aws:iam::887930139017:user/bedrock-dev-view
       username: bedrock-dev-view
       groups:
         - view
