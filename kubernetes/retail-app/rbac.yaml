@@ -3,7 +3,7 @@ kind: ClusterRoleBinding
 metadata:
   name: bedrock-dev-view-binding
   labels:
-    project: karatu-2026-capstone
+    project: karatu-2025-capstone
 subjects:
 - kind: User
   name: bedrock-dev-view

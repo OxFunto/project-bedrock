@@ -4,7 +4,7 @@ metadata:
   name: retail-store-ingress
   namespace: retail-app
   labels:
-    project: karatu-2026-capstone
+    project: karatu-2025-capstone
   annotations:
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing

@@ -28,7 +28,7 @@ provider "aws" {
 
   default_tags {
     tags = {
-      Project = "karatu-2026-capstone"
+      Project = "karatu-2025-capstone"
     }
   }
 }
