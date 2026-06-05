@@ -1,24 +1,4 @@
 {
-  "alb_controller_role_arn": {
-    "sensitive": false,
-    "type": "string",
-    "value": "arn:aws:iam::887930139017:role/project-bedrock-alb-controller-role"
-  },
-  "alb_url": {
-    "sensitive": false,
-    "type": "string",
-    "value": "http://k8s-retailap-retailst-17d19cf248-117834514.us-east-1.elb.amazonaws.com"
-  },
-  "assets_bucket_name": {
-    "sensitive": false,
-    "type": "string",
-    "value": "bedrock-assets-alt-soe-025-4736"
-  },
-  "carts_dynamodb_role_arn": {
-    "sensitive": false,
-    "type": "string",
-    "value": "arn:aws:iam::887930139017:role/project-bedrock-carts-dynamodb-role"
-  },
   "cluster_endpoint": {
     "sensitive": false,
     "type": "string",
@@ -29,10 +9,30 @@
     "type": "string",
     "value": "project-bedrock-cluster"
   },
+  "region": {
+    "sensitive": false,
+    "type": "string",
+    "value": "us-east-1"
+  },
+  "vpc_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "REDACTED"
+  },
+  "assets_bucket_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "bedrock-assets-alt-soe-025-4736"
+  },
+  "alb_url": {
+    "sensitive": false,
+    "type": "string",
+    "value": "http://k8s-retailap-retailst-17d19cf248-117834514.us-east-1.elb.amazonaws.com"
+  },
   "dev_access_key_id": {
     "sensitive": false,
     "type": "string",
-    "value": "AKIA45PGCWGEWFDYQPH5"
+    "value": "REDACTED - provided separately in submission document"
   },
   "mysql_host": {
     "sensitive": false,
@@ -43,15 +43,5 @@
     "sensitive": false,
     "type": "string",
     "value": "project-bedrock-postgres.c6744gw0eixf.us-east-1.rds.amazonaws.com"
-  },
-  "region": {
-    "sensitive": false,
-    "type": "string",
-    "value": "us-east-1"
-  },
-  "vpc_id": {
-    "sensitive": false,
-    "type": "string",
-    "value": "vpc-06e6744d613af7933"
   }
 }
