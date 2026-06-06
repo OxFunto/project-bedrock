@@ -164,3 +164,22 @@ This takes approximately 15-20 minutes.
 | IAM Dev User | bedrock-dev-view |
 | App Namespace | retail-app |
 | Project Tag | karatu-2026-capstone |
+
+--> Helm Deployment
+
+The application can be deployed with a single command:
+
+```bash
+helm upgrade --install retail-store ./helm/retail-store \
+  --namespace retail-app \
+  --create-namespace \
+  --set mysql.host=project-bedrock-mysql.c6744gw0eixf.us-east-1.rds.amazonaws.com \
+  --set postgres.host=project-bedrock-postgres.c6744gw0eixf.us-east-1.rds.amazonaws.com \
+  --set dynamodb.tableName=project-bedrock-carts \
+  --set carts.serviceAccount.roleArn=arn:aws:iam::887930139017:role/project-bedrock-carts-dynamodb-role
+```
+
+To apply the full application manifests:
+```bash
+kubectl apply -f https://github.com/aws-containers/retail-store-sample-app/releases/latest/download/kubernetes.yaml -n retail-app
+```

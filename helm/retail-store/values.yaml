@@ -1,0 +1,24 @@
+namespace: retail-app
+
+mysql:
+  host: project-bedrock-mysql.c6744gw0eixf.us-east-1.rds.amazonaws.com
+  database: orders
+  username: dbadmin
+
+postgres:
+  host: project-bedrock-postgres.c6744gw0eixf.us-east-1.rds.amazonaws.com
+  database: retaildb
+  username: postgres
+
+dynamodb:
+  tableName: project-bedrock-carts
+  region: us-east-1
+
+carts:
+  serviceAccount:
+    roleArn: arn:aws:iam::887930139017:role/project-bedrock-carts-dynamodb-role
+
+ingress:
+  enabled: true
+  albArn: ""
+  host: ""
