@@ -4,8 +4,6 @@ on:
   pull_request:
     branches:
       - main
-    paths:
-      - 'terraform/**'
 
 jobs:
   terraform-plan:
@@ -59,4 +57,3 @@ jobs:
               repo: context.repo.repo,
               body: `## Terraform Plan Output\n\`\`\`hcl\n${truncated}\n\`\`\``
             });
-
