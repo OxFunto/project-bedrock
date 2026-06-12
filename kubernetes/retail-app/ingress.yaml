@@ -13,7 +13,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-  - host: retail.100.30.137.220.nip.io
+  - host: retail.100.51.150.200.nip.io
     http:
       paths:
       - path: /
